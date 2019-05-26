@@ -50,6 +50,21 @@
 			<artifactId>jjwt</artifactId>
 			<version>0.7.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.12</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.acrobat</groupId>
+			<artifactId>acrobat</artifactId>
+			<version>1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>

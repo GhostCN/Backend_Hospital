@@ -29,13 +29,16 @@ public class SpringSecurityJwtApplication implements CommandLineRunner{
 	}
 	@Override
 	public void run(String... args) throws Exception {
-	/*	// TODO Auto-generated method stub
-		account.saveRole(new Role("ADMIN"));
+		// TODO Auto-generated method stub
+		/*account.saveRole(new Role("ADMIN"));
 		account.saveUser(
-				new Utilisateur("sene", "ghost", "789871234", new Date(), "so", "konate", true, "ghost@gmail.com"));
+				new Utilisateur("ndoye", "lebou", "772346577", new Date(), "zeyna", "ndoye", true, "zeyna@gmail.com"));
 
-		account.addRoleToUser("so", "ADMIN");
+		account.addRoleToUser("zeyna", "ADMIN");
+	
+		account.addRoleToUser("zeyna", "SECRETAIRE");
 		*/
+		
 	}
 	
 }

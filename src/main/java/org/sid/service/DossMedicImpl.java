@@ -3,6 +3,7 @@ package org.sid.service;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.sid.dao.ConsultationDao;
 import org.sid.dao.PatientDao;
@@ -47,6 +48,19 @@ public class DossMedicImpl implements DossierMedical{
 	public List<Patient> listPatient() {
 	
 		return pdao.findAll();
+	}
+
+	@Override
+	public Optional<Consultation> getConsultation(Long id) {
+		// TODO Auto-generated method stub
+		return medic.findById(id);
+	}
+
+	@Override
+	public Patient findByNumerodossier(String num) {
+	return pdao.findByNumerodossier(num);
+		
+		
 	}
 
 }

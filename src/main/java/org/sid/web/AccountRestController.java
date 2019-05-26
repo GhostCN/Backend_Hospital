@@ -57,7 +57,8 @@ public class AccountRestController {
 		if (!account.checkpassword(auth.getName(), reg.getAncienMp())) {
 			throw new RuntimeException("Mot de passe incorrect");
 		}
-System.out.println("Mot de passe"+auth.getName());
+System.out.println("Mot de passe"+reg.getNouvMp());
+System.out.println("conf"+reg.getConfirMp());
 		if (!reg.getNouvMp().equals(reg.getConfirMp())) {
 			throw new RuntimeException("You should confirm your password");
 		}

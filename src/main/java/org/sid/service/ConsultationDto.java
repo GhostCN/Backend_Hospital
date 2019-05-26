@@ -15,9 +15,45 @@ public class ConsultationDto {
 	private String commentaire;
 	private String prescription;
 	private Utilisateur utilisateur;
+	private String numerodossier;
+	private String nom;
+	private String tel;
+	private Date datenaiss;
 	private Patient patients;
 	private List<Utilisateur> utilisateurs;
 	private Service services;
+
+	public String getNumerodossier() {
+		return numerodossier;
+	}
+
+	public void setNumerodossier(String numerodossier) {
+		this.numerodossier = numerodossier;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getTel() {
+		return tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+
+	public Date getDatenaiss() {
+		return datenaiss;
+	}
+
+	public void setDatenaiss(Date datenaiss) {
+		this.datenaiss = datenaiss;
+	}
 
 	public Long getId() {
 		return id;

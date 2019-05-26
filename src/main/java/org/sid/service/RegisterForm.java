@@ -25,51 +25,51 @@ import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RegisterForm {
-	@NotEmpty
-	@Size(min=4,max=10)
+	/*@NotEmpty
+	@Size(min=4,max=10)*/
 	private String ancienMp;
-	@NotEmpty
-	@Size(min=4,max=10)
+	/*@NotEmpty
+	@Size(min=4,max=10)*/
 	private String nouvMp;
-	@NotEmpty
-	@Size(min=4,max=10)
+/*	@NotEmpty
+	@Size(min=4,max=10)*/
 	private String confirMp;
-	
+/*	
 	@NotEmpty
-	@Size(min=2,max=10)
+	@Size(min=2,max=10)*/
 	private String nom;
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String prenom;
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String telephone;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
-	@NotNull
-	@Past
+	/*@NotNull
+	@Past*/
 	private Date date;
 	@Column(unique=true)
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String matricule;
 	private String password;
 	@OneToMany(mappedBy="utilisateur",fetch=FetchType.LAZY)
 	private List<Consultation>consultations;
 	@ManyToOne
 	@JoinColumn(name="poste")
-	@NotNull
+	//@NotNull
 	
 	private Poste poste;
 	@ManyToMany(fetch=FetchType.EAGER)
-	@NotEmpty
+	//@NotEmpty
 	private List<Role>roles;
 	@ManyToOne
 	@JoinColumn(name="service")
-	@NotNull
+	//@NotNull
 	private Service service;
 	private Boolean enabled;
-	@Email
-	@NotNull
+	/*@Email
+	@NotNull*/
 	private String email;
 	
 	

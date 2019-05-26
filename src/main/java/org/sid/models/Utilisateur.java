@@ -31,41 +31,41 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Utilisateur {
 	@Id @GeneratedValue
 	private Long id;
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String nom;
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String prenom;
-	@NotEmpty
-	@Size(min=2,max=10)
+/*	@NotEmpty
+	@Size(min=2,max=10)*/
 	private String tel;
-	@DateTimeFormat(pattern="yyyy-MM-dd")
+	/*@DateTimeFormat(pattern="yyyy-MM-dd")
 	@NotNull
-	@Past
+	@Past*/
 	private Date dateNaiss;
 	@Column(unique=true)
-	@NotEmpty
-	@Size(min=2,max=10)
+	/*@NotEmpty
+	@Size(min=2,max=10)*/
 	private String matricule;
 	private String password;
 	@OneToMany(mappedBy="utilisateur",fetch=FetchType.LAZY)
 	private List<Consultation>consultations;
 	@ManyToOne
 	@JoinColumn(name="poste")
-	@NotNull
+	//@NotNull
 	
 	private Poste poste;
 	@ManyToMany(fetch=FetchType.EAGER)
-	@NotEmpty
+	//@NotEmpty
 	private List<Role>roles;
 	@ManyToOne
 	@JoinColumn(name="service")
-	@NotNull
+	//@NotNull
 	private Service service;
 	private Boolean enabled;
-	@Email
-	@NotNull
+	//@Email
+	//@NotNull
 	private String email;
 	
 	public Utilisateur() {
